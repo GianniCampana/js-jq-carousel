@@ -12,7 +12,7 @@ $(function(){
       imgActive.removeClass('active');
       circleActive.removeClass('active');
       /* passare active da last a first */
-      imgActive.next('img').addClass('active')
+      
       if(imgActive.next('img').length === 0){
           $('.central img').first().addClass('active');
           $('.cont_balls i').first().addClass('active');
