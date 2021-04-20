@@ -12,9 +12,10 @@ $(function(){
       imgActive.removeClass('active');
       circleActive.removeClass('active');
       /* passare active da last a first */
-      if(imgActive.hasClass('last')){
-          $('.central .first').addClass('active');
-          $('.cont_balls i.first').addClass('active');
+      imgActive.next('img').addClass('active')
+      if(imgActive.next('img').length === 0){
+          $('.central img').first().addClass('active');
+          $('.cont_balls i').first().addClass('active');
       }else{
            /* aggiungo la classe active all'elemento successivo */
          imgActive.next('img').addClass('active');
@@ -30,20 +31,14 @@ $(function(){
     var circleActive = $('.cont_balls i.active');
       imgActive.removeClass('active');
       circleActive.removeClass('active');
-      if(imgActive.hasClass('first')){
-          $('.central .last').addClass('active');
-          $('.cont_balls .last').addClass('active');
+      if(imgActive.prev('img').length === 0){
+          $('.central img').last().addClass('active');
+          $('.cont_balls i').last().addClass('active');
       }else{
           imgActive.prev('img').addClass('active');
           circleActive.prev('i').addClass('active');
       }
   }
-
-
-
-
-
-
 
 
 });

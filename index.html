@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
     <title>SFOGLIA IMMAGINI</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container_up">
+      <div class="left">
+        <i class="fas fa-chevron-left prev"></i>
+      </div>
 
-        <div class="left">
-            <i class="fas fa-chevron-left prev"></i>
-        </div>
+      <div class="central">
+        <img
+          class="active first"
+          src="assets/img/download1.jpg"
+          alt="first img"
+        />
+        <img src="assets/img/download2.jpg" alt="first img" />
+        <img src="assets/img/download3.jpg" alt="first img" />
+        <img class="last" src="assets/img/download4.jpg" alt="first img" />
+      </div>
 
-        <div class="central">
-            <img class="active first" src="assets/img/download1.jpg" alt="first img">
-            <img src="assets/img/download2.jpg" alt="first img">
-            <img src="assets/img/download3.jpg" alt="first img">
-            <img class="last" src="assets/img/download4.jpg" alt="first img">
-            
-        </div>
-
-        <div class="right">
-            <i class="fas fa-chevron-right next"></i>
-        </div>
-
+      <div class="right">
+        <i class="fas fa-chevron-right next"></i>
+      </div>
     </div>
 
     <div class="container_down">
-        <div class="cont_balls">
-            <i class="fas fa-circle active first"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle last"></i>
-        </div>
+      <div class="cont_balls">
+        <i class="fas fa-circle active first"></i>
+        <i class="fas fa-circle"></i>
+        <i class="fas fa-circle"></i>
+        <i class="fas fa-circle last"></i>
+      </div>
     </div>
-    
-    
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
